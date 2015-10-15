@@ -1,0 +1,11 @@
+This software is licensed under the GNU General Public License, Version 3.
+
+
+
+
+
+KNOWN ISSUES
+	Does not properly handle multiple windows
+	XMLHttpRequest request is synchronous (which is undesireable)
+	Only supports certain formats of captions; others result in bad HTTP request
+	TTS_URL is found by parsing through HTML. There should be some way to retrieve the HTML element.

@@ -1,0 +1,12 @@
+[CHANGELOG]
+
+[1.0] First major update
+	Cleaned up code/comments
+	Added nonpersistent event/background page
+	All HTTP requests are now prehandled by background script and loaded into popup on click
+	Fixed issue with loading captions for a previous tab after tabs had already been switched by user
+	Event listeners now parse through XML to find node value rather than looking at innerHTML (separating timestamp from its representation)
+	Changed representation of time to match YouTube's
+	Fixed manifest so that content script only executes on YouTube domains.
+
+[0.1] Initial release

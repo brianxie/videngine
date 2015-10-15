@@ -1,0 +1,38 @@
+{
+	"manifest_version": 2,
+
+	"name": "videngine",
+	"description": "",
+	"version": "1.0",
+
+	"icons": {
+		"16": "icon128.png",
+		"32": "icon128.png",
+		"48": "icon128.png",
+		"128": "icon128.png"
+	},
+	"browser_action": {
+		"default_icon": "icon128.png",
+		"default_popup": "popup.html",
+		"default_title": "videngine"
+	},
+	"permissions": [
+		"activeTab",
+		"tabs",
+		"https://ajax.googleapis.com/",
+		"http://*/*",
+		"https://*/*"
+	],
+	"content_scripts": [{
+		"js": ["content.js"],
+		"matches": ["https://www.youtube.com/*"]
+	}],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"web_accessible_resources": [
+		"jump.js",
+		"content.js"
+	]
+}
